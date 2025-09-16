@@ -691,6 +691,9 @@ span{
     .hamburger {
         display: block;
     }
+    .heading{
+        font-size: 4rem;
+    }
     
 }
 
