@@ -642,11 +642,16 @@ span{
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
     
     .navbar.open{
-        display: block;
+        opacity: 1;
+       transform: translateY(0);
+       pointer-events: auto;
     }
     .navbar.active{
         display: block;
