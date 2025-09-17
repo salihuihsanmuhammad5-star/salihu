@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.css" />
     <link href="https://cdn.jsdeliver.net/npm/remixicons@4.2.0/fonts/remixicons.css" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -106,23 +106,30 @@
              line-height: 1;
              padding-bottom: 5px;
             }
-            @media(max-width:446px){
-                .about{
-                   padding-bottom: 2rem;
-                }
+            @media(max-width:600px){
                 .services-container{
                    grid-template-columns: repeat(1,1fr);
+                   padding: 3rem;
+                   justify-content: center;
+                   align-items: center;
+                   
                 } 
-                .btn-group{
-                    padding-top: 3rem;
+                .service-box .service-info{
+                  display: flex;
+                 flex-direction: column;
+                 text-align: center;
+                 max-height: 200px;
+                 justify-content: center;
+                 align-items: center;
+                 padding: 8rem;
                 }
-                p{
-                    padding: 1rem;
+                .btn-group{
+                    margin-top: 2rem;
                 }
             }
-    </style>
-</head>
-<body>
+       </style>
+    </head>
+ <body>
 
     <header class="header">
         <a href="#home" class="logo">Salihu <span>Ihsan </span><span>Muhammad</span></a>
@@ -130,7 +137,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
          <button  class="hamburger" id="hamburger">&#9776;</button>
         <nav class="navbar" id="navbar">
-            <a href="portfolio.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="#about" class="active">About</a>
             <a href="Service.html">Services</a>
             <a href="contact.html">Contact</a>
@@ -203,7 +210,7 @@
 
         <ul class="list">
             <li>
-                <a href="portfolio.html">Home</a>
+                <a href="index.html">Home</a>
             </li>
 
             <li>
